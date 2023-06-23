@@ -1,6 +1,5 @@
 {
   "name": "cmstore",
-  "proxy": "https://shoppingapi.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

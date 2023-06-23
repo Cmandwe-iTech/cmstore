@@ -16,7 +16,7 @@ function CartScreen() {
   } = state;
   const navigate = useNavigate();
   const updateCartHandler = async (item, quantity) => {
-    const { data } = await axios.get(`/api/products/${item._id}`);
+    const { data } = await axios.get(`https://shoppingapi.onrender.com/api/products/${item._id}`);
     if (data.countInStock < quantity) {
       window.alert("sorry. product is out of stock");
       return;
